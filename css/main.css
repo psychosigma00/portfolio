@@ -1,0 +1,106 @@
+/* reset : mettre à 0 toutes les propriété du navigateur */
+html{
+    font-size: 62.5%; 
+    /* 
+    taille de la police de caractère
+    62.5% * 16 = 10.00rem = root em
+    */
+}
+body{
+    font: 1.6rem sans-serif; /* taille + police 1.6rem */
+    margin: 0;
+    letter-spacing: 0.1rem; /* 1px */
+    line-height: 1.6; /* 16px */
+    background-color: var(--theme-bg-color);
+    color: var(--theme-text-color);
+}
+h1,h2,h3,p,ul{ /* contexte de balises ayant les mêmes props */
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    list-style: none;
+}
+/* variables css */
+:root{
+    --theme-bg-color: #2b2a33;
+    --theme-text-color: #fff;
+    --theme-link-color: rgb(17, 16, 15);
+    --theme-header-bg: rgba(0, 150, 136,1.0);
+    --theme-btn-primary: #0a60e0;
+    --theme-btn-secondary: rgb(222, 161, 236);
+    --theme-btn-default: #ccc;
+
+}
+button{
+    padding: 0;
+    background-color: transparent;
+    font-size: inherit;
+    border: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--theme-link-color);
+    
+}
+/* theme css */
+
+.btn-theme-g{
+    display: inline-block;
+    width: 20rem; /* 200px */
+    line-height: 3rem;
+    padding: 1rem;
+    background-color: var(--theme-btn-secondary);
+    text-align: center;
+    margin-right: 1rem;
+    color: var(--theme-link-color);
+    text-transform: uppercase;
+    border-radius: .4rem;
+}
+.btn-info{
+    padding:0 .7rem;
+    color: var(--theme-text-color);
+}
+.btn-primary{
+    background-color: var(--theme-btn-primary);
+    color: #fff;
+}
+.btn-secondary{
+    background-color: var(--theme-btn-secondary);
+    color: var(--theme-link-color);
+}
+header > h1{
+    background-color:var(--theme-header-bg);
+    text-align: center;
+    line-height: 8rem;
+    font-weight:bolder;
+    font-size: 4rem;
+    color: #fff;
+}
+header > h1 span{
+    vertical-align: 0.5rem; /* 5px */
+}
+section{
+    max-width: 100rem; /* 1200px */
+    margin: 5rem auto;
+    background-color: #42414d;
+    padding: 1rem;
+}
+section h2, 
+section p{
+  background-color: #2b2a33;
+  color: inherit;
+  padding: 1rem; 
+}
+section p{
+    margin: 0 0 1rem 0;
+}
+
+section p img{
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer *{
+    text-align: center;
+}
